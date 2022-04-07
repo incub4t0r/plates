@@ -1,0 +1,33 @@
+{%extends 'pagebase.html' %}
+
+{% block title %}About ❓{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1><strong>About plates</strong></h1>
+    <h3><strong>What is plates?</strong></h3>
+    <ul>
+        I built this mobile-first web application to help calculate the plates I needed load for workouts.
+    </ul>
+
+    <h3><strong>What can I do with plates?</strong></h3>
+    <ul>
+        You can enter in the weight you want to use, then assuming you are using a 45lb bar, the page will load the plates you need to load per side.
+    </ul>
+
+    <h3><strong>What is plates built on?</strong></h3>
+    <ul>
+        plates is built on html, css, and flask. Currently plates is running on pythonanywhere.com.
+    </ul>
+
+    <h3><strong>I can do this in my head.</strong></h3>
+    <ul>
+        This web app is a small portion of a larger project I am working on to track your maxes and compete against your friends on a leaderboard, which may or may never be released. Stay tuned!
+    </ul>   
+
+    <h3><strong>Your calculator doesn't work.</strong></h3>
+    <ul>
+        I am tracking an issue with 2.5 increments on weights, and that is a side effect of the math.floor function I am using. I plan to fix this soon.
+    </ul>  
+</div>
+{% endblock %}
